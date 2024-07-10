@@ -1,3 +1,4 @@
+import Navbar from "./_components/Navbar";
 import "./_styles/globals.css";
 import {Lora} from 'next/font/google'
 
@@ -16,7 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={lora.className}>
       <body>
-        <h1> Whereas recognition of the inherent dignity</h1>
+        <main className="max-w-[1260px] mx-auto">
+          <Navbar />
+        </main>
         {children}
       </body>
     </html>
